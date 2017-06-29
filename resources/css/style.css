@@ -1,0 +1,287 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+body{
+  margin: 0;
+}
+
+.page-container {
+  width: 100%;
+}
+
+#page-top{
+  width: 960px;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 0;
+}
+
+#page-bottom{
+  width: 960px;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 34rem;
+}
+
+#banner {
+  width = 100%;
+  height: 31rem;
+  background-image: url("images/glasses-bg.png");
+  background-size: cover;
+}
+
+header img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+header div p {
+  width: 160px;
+}
+
+header {
+  width: 100%;
+  background-color: cadetblue;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  margin: 1rem 0 10rem 0;
+}
+
+header div {
+  display: inline-flex;
+  align-items: center;
+}
+
+header nav ul{
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+header nav li {
+  padding: 1rem 2rem 1rem 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu-link {
+  display: none;
+}
+
+h1 {
+  position: absolute;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  right: -2rem;
+  margin: 0;
+}
+
+.container {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+#services {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 25.5rem;
+}
+
+#services div {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services div p {
+  text-align: center;
+}
+
+.portrait {
+  width: 3.5rem;
+}
+
+.landscape {
+  width: 5rem;
+}
+
+#ruler {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.container {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: white;
+  width: 10rem;
+  margin: 0 0 1rem 0;
+  background-color: cadetblue;
+  padding: 0.5rem 1rem;
+}
+
+#info {
+  display: inline-flex;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+#info div {
+  margin-left: 5%;
+  width: 35%;
+}
+
+footer {
+  height: 9.5rem;
+  background-color: azure;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #banner {
+    height: 22rem;
+  }
+
+  header {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+    right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+
+
+  #page-top {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    top: 0;
+  }
+
+  #page-bottom {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    top: 25rem;
+  }
+}
+
+footer {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  header {
+    margin-bottom: 9rem;
+  }
+
+  header p {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1rem;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  #services-link, #products-link, #contact-link{
+    display: none;
+  }
+
+  #menu-link {
+    display: inline;
+  }
+
+  #page-bottom {
+    top: 20.77rem;
+  }
+
+  #services {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0!important;
+  }
+
+  #services div {
+    height: auto;
+    margin-bottom: 1.54rem;
+  }
+
+  #services>div:last-of-type {
+    margin-bottom: 3.77rem;
+  }
+
+  #services p {
+    font-size: 0.77rem;
+    margin-bottom: 0;
+  }
+
+  #info {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  #info div {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #info h2 {
+    width: 100%;
+  }
+
+  #info p {
+    font-size: 0.77rem;
+    margin: 1rem 0.5rem 4rem 0.5rem;
+  }
+
+  footer {
+    margin-top: 0;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  footer span{
+   display: none;
+  }
+
+}
